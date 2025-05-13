@@ -10,7 +10,7 @@ function MensajeMontaje() {
 
   const verificarRespuesta = () => {
     // Puedes cambiar el acertijo y respuesta correcta si quieres
-    const respuestaCorrecta = "fuego";
+    const respuestaCorrecta = "seis";
     if (respuesta.toLowerCase().trim() === respuestaCorrecta) {
       setResultado("✅ La bomba se desactivó");
     } else {
@@ -20,8 +20,8 @@ function MensajeMontaje() {
 
   return (
     <div>
-      <h3>🧠 Acertijo:</h3>
-      <p>Si me nombras, desaparezco. ¿Qué soy?</p>
+      <h3>Acertijo:</h3>
+      <p>¿Qué palabra de cuatro letras contiene seis</p>
 
       <input
         type="text"

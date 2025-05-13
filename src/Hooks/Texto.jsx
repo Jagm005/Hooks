@@ -8,7 +8,7 @@ function MostrarOcultar() {
       <button onClick={() => setMostrar(!mostrar)}>
         {mostrar ? 'Ocultar' : 'Mostrar'} mensaje
       </button>
-      {mostrar && <p>Este es un mensaje secreto y se autodestruira en 100 segundos .</p>}
+      {mostrar && <p>Hola, yo soy el mensaje secreto .</p>}
     </div>
   );
 }

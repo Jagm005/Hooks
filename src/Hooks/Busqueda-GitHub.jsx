@@ -5,6 +5,8 @@ function BusquedaGitHub() {
 
   return (
     <div>
+      <p>Buscador de usuarios de GitHub</p>
+      <p>Ingresa el nombre de usuario de GitHub que deseas buscar:</p>
       <input
         type="text"
         value={usuario}

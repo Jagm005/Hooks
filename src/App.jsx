@@ -11,16 +11,26 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      
-      
-      <BusquedaGitHub />
-      <MensajeMontaje/>
-      
-      <MostrarOcultar />
-      <Cronometro />
-      
-    </>
+    <div style={{ display: 'flex', flexDirection: 'row', height: '100vh' }}>
+      <div style={{ flex: 1, padding: '1rem', boxSizing: 'border-box' }}>
+        <h1>Hooks Básicos</h1>
+        <div className="column-box">
+          <BusquedaGitHub />
+        </div>
+        <div className="column-box">
+          <MensajeMontaje />
+        </div>
+        <div className="column-box">
+          <MostrarOcultar />
+        </div>
+        <div className="column-box">
+          <Cronometro />
+        </div>
+      </div>
+      <div className="second-column">
+        {/* Segunda columna vacía para futuros contenidos */}
+      </div>
+    </div>
   )
 }
 
