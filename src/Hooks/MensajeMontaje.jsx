@@ -12,9 +12,9 @@ function MensajeMontaje() {
     // Puedes cambiar el acertijo y respuesta correcta si quieres
     const respuestaCorrecta = "seis";
     if (respuesta.toLowerCase().trim() === respuestaCorrecta) {
-      setResultado("✅ La bomba se desactivó");
+      setResultado("Respuesta correcta! 🎉");
     } else {
-      setResultado("💥 Has fallado");
+      setResultado("Respuesta incorrecta. Intenta de nuevo.");
     }
   };
 
