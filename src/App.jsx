@@ -17,11 +17,11 @@ import { Button } from 'antd';
 
 function App() {
   // Estado para el tema
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dim')
 
   // Cambia el tema al alternar el checkbox
   const handleThemeChange = (e) => {
-    setTheme(e.target.checked ? 'synthwave' : 'light')
+    setTheme(e.target.checked ? 'luxury' : 'dim')
   }
 
   return (
@@ -45,9 +45,9 @@ function App() {
           </svg>
           <input
             type="checkbox"
-            value="dark"
+            value="luxury"
             className="toggle theme-controller"
-            checked={theme === 'synthwave'}
+            checked={theme === 'luxury'}
             onChange={handleThemeChange}
           />
           <svg
