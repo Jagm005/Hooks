@@ -1,4 +1,5 @@
 import { useReducer } from 'react';
+import { Button } from 'antd';
 
 const counterReducer = (state, action) => {
   switch (action.type) {
@@ -17,15 +18,19 @@ export const Counter = () => {
   return (
     <div style={{ margin: '20px' }}>
       <p>Cuenta: {state.count}</p>
-      <button 
+      <div className="Boton">
+        <Button 
         onClick={() => dispatch({ type: 'INCREMENT' })}
         style={{ marginRight: '10px' }}
       >
         Incrementar
-      </button>
-      <button onClick={() => dispatch({ type: 'RESET' })}>
+      </Button>
+      
+      
+      <Button onClick={() => dispatch({ type: 'RESET' })}>
         Reiniciar
-      </button>
+      </Button>
+      </div>
     </div>
   );
 };

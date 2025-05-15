@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import { Button } from 'antd';
 function MensajeMontaje() {
   const [respuesta, setRespuesta] = useState('');
   const [resultado, setResultado] = useState('');
@@ -29,7 +29,11 @@ function MensajeMontaje() {
         value={respuesta}
         onChange={(e) => setRespuesta(e.target.value)}
       />
-      <button onClick={verificarRespuesta}>Responder</button>
+      <div className="Boton">
+        <br />
+        <Button type="primary" color="default" variant="outlined" onClick={verificarRespuesta}>Responder</Button>
+      </div>
+      
 
       {resultado && <p>{resultado}</p>}
     </div>

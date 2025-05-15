@@ -13,6 +13,8 @@ import { SearchList } from './Hooks_Avanzados/SearchList'
 import { ColorProvider } from './Hooks_Avanzados/ColorContext'
 import { ColorDisplay } from './Hooks_Avanzados/ColorDisplay'
 
+import { Button } from 'antd';
+
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'row', height: '100vh' }}>
@@ -52,10 +54,17 @@ function App() {
           <ColorProvider color="cyan">
             <ColorDisplay />
           </ColorProvider>
+        
         </div>
       </div>
+      
     </div>
+
+    
   )
+  
 }
+
+
 
 export default App
